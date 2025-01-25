@@ -1,0 +1,69 @@
+<!--HTML Images-->
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+
+<!--HTML Images Syntax-->
+<img src="url" alt="alternatetext">
+
+<!--Image Size - Width and Height-->
+<img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+<!--Image as a Link-->
+<a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+  </a>
+
+<!--Image Floating-->
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image will float to the right of the text.</p>
+    
+    <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image will float to the left of the text.</p>
+
+<!--Image Maps-->
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+<!--Create Image Map-->
+<map name="workmap"></map>
+
+<!--The Areas-->
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+<!--Background Image on an HTML element-->
+<p style="background-image: url('img_girl.jpg');"></p>
+
+<!--Background Image on a Page-->
+<style>
+    body {
+      background-image: url('img_girl.jpg');
+    }
+    </style>
+
+<!--Background Repeat-->
+<style>
+    body {
+      background-image: url('example_img_girl.jpg');
+    }
+    </style>
+
+<!--Background Stretch-->
+<style>
+    body {
+      background-image: url('img_girl.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
+
+<!--The HTML <picture> Element-->
+    <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <img src="img_girl.jpg">
+      </picture>
